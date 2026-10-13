@@ -18,10 +18,7 @@ async def process_document(
 
     # Step 0: Validate file
     if file.content_type != "application/pdf":
-        raise HTTPException(
-            status_code=400,
-            detail="Only PDF files are currently supported"
-        )
+        raise HTTPException(status_code=400,detail="Only PDF files are currently supported")
 
     # Step 1: Read PDF bytes
     content = await file.read()

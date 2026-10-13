@@ -1,0 +1,25 @@
+
+name: Insight Forge AI
+
+on:
+  workflow_dispatch:
+
+  pull_request:
+    branches: [main, develop, master]
+
+jobs:
+  app-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print welcome message
+        run: echo "Hello, welcome to GitHub Actions!"
+
+
+
+        steps:
+      - name: Print welcome
+        run: echo 'Welcome to testing'
+
+      - name: Print second message
+        run: echo 'This is my second step'    
